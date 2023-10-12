@@ -5,21 +5,18 @@ agent any stages
     {
 steps{
         echo "build done"
-        bat "mvn clean"
     }
     }
      stage('Test')
     {
 steps{
         echo "test done"
-bat "mvn test"
 }
     }
  stage('Compile')
     {
 steps{
         echo "compile done"
-bat "mvn compile"
 }
     }
      stage('Deploy')
